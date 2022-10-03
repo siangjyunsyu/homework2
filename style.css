@@ -1,0 +1,405 @@
+*{
+    box-sizing: border-box;
+}
+html, body{
+    margin: 0;
+    padding: 0;
+}
+body{
+    background-image:url(image/wrap/bg.jpg) ;
+    font-family: '微軟正黑體','Arial', Helvetica,sans-serif;
+}
+/* ------- header:圖片 ------- */
+.container-main{
+    max-width: 960px;
+    margin: 0 auto;
+}
+.wrap{
+    margin: 0 20px;
+}
+.h-wrap{
+    max-width: 960px;
+    margin: 0 auto;
+}
+header{    
+    height: 223px;
+    margin: 0;
+    background: #18b8c7;
+    background-image: url(image/1-header/header_l.png);
+    text-align: center;    
+}
+.h-top{
+    text-align: left;
+    padding: 10px;
+}
+.h-top img{
+    width: 280px;
+}
+.h-2016{
+    max-width: 100%;
+    display: block;    
+    text-align: center;
+    margin: 0 auto; 
+    position: relative;   
+}
+
+/* ------- header:小icon(fb/home) ------- */
+.sm-fb{
+    background: #055260;
+    overflow: hidden;
+    width: 36px;
+    height: 36px;
+    position: absolute;
+    top: 60px;
+    right: 20px;
+    border-radius: 50%;
+}
+.sm-home{
+    background: #055260;
+    overflow: hidden;
+    width: 36px;
+    height: 36px;
+    position: absolute;
+    top: 102px;
+    right: 20px;
+    border-radius: 50%;
+}
+.sm-fb img{
+    position: relative;
+    top: -253px;
+}
+.sm-home img{
+    position: relative;
+    top: -325px;
+}
+.sm-fb img:hover{
+    position: relative;
+    top: -288px;
+}
+.sm-home img:hover{
+    position: relative;
+    top: -360px;
+}
+.sm-3{
+    background: #055260;
+    overflow: hidden;
+    width: 36px;
+    height: 36px;
+    position: absolute;
+    top: 18px;
+    right: 20px;
+    border-radius: 50%;
+    display: none;
+}
+.sm-3 img{
+    position: relative;
+    top: 0px;
+    display: none;
+}
+/* ------- header:按鈕清單 ------- */
+ul {
+    list-style: none;
+}
+.btn{
+    margin: 0;
+    padding: 0;
+}
+.h-list{
+    margin: 0 auto 0;
+    width:640px;
+    max-width: 100%;
+    font-size: 15px;
+}
+.h-list ul li{
+    float:left;
+    width:25%;
+    text-align: center;
+}
+.h-list ul li a{
+    display: inline-block;
+    padding:6px 20px;
+    font-weight: bold;
+    text-decoration: none;
+    color: #000;
+}
+.h-list ul li a:hover ,.h-list ul li a.active{
+    background: #fff000;
+    border-radius: 20px;
+    color:#000;
+}
+
+/* ------- section:活動前言區(foreword) ------- */
+.s-img{
+    width: 100%;
+    display: block;
+    margin: 40px auto 0px;
+}
+.s-img-2{
+    width: 100%;
+    object-fit: cover;
+    margin: 0;
+    padding: 0;
+}
+.s-img-3{
+    width: 100%;
+    margin: 0;
+    padding: 0;
+    display: none;
+}
+.s-hat{    
+   position: absolute;
+   top: 45%;
+   left: 13%;
+}
+.s-word p{
+    text-align: center;
+    font-weight: bold;
+    font-size: 1.2rem;
+    letter-spacing: -2px;    
+    color: #777;
+    line-height: 2rem;
+}
+.s-word{
+    position: relative;
+}
+.time-girl{
+    position: absolute;
+    top: -210px;
+    right: 40px;
+    
+}
+.schedule-list-2{    
+    display: none;
+}
+/* ------- section:活動時間區(time) ------- */
+.meun-list{
+    margin: 0;
+    padding: 30px 40px 30px 40px;
+}
+section{
+    position: relative;
+}
+.box{
+    width: 80px;
+    height: 80px;
+    color: #fff;
+    background: #1f8597;
+    text-align: center;
+    border-radius: 50%;
+    position: absolute;
+    top: -40px;
+    left: -29px;    
+    font-size: 18px;
+    font-weight: bold;
+}
+.meun-list li{
+    color: #555;
+    font-weight: bold;
+    font-size: 15px;
+    font-family: '微軟正黑體','Arial', Helvetica,sans-serif;
+}
+.meun-list strong{
+    display: inline-block;
+    margin: 10px 0;
+    font-size: 16px;
+    font-weight: bold;
+    color: #055260;
+}
+.box-meun{
+    max-width: 900px;
+    background: #fff;
+    border-radius: 40px;
+    border: 2px solid #18b8c7;
+    margin: 80px auto;
+}
+
+/* ------- section:活動賽程區(schedule) ------- */
+.schedule-girl{
+    flex: left;
+    position: absolute;
+    margin-left: -50px;
+}
+.schedule-list-1{
+    max-width: 100%;
+    text-align: right;
+    margin-right: 20px;
+    object-fit: cover;
+    padding: 0px 0px 40px 0px;
+}
+.schedule-list-1 img{
+    width: 95%;
+}
+
+/* ------- section:活動獎項區(award) ------- */
+
+/* ------- section:注意事項區(notice) ------- */
+
+/* ------ f-title ------- */
+.f-title{
+    /* position: relative; */
+    background:#000;
+    display: flex;
+    flex-direction: row;
+    height: 120px;    
+}
+.container{
+    display: flex;
+    margin: auto;
+    padding: 0px;
+    text-align: center;
+}
+.f-box{
+    color: #ccc;
+    height: 60px;
+    width: 60px;
+    border-radius: 50%;
+    background: #777;
+    font-size: 16px;
+    font-weight: bold;
+    /* position: absolute; */
+    text-align: center;
+    bottom: 30px;
+    margin: 15px 10px 0 20px ;
+}
+.f-box p{
+    margin: 9px;
+}
+.f-title img{
+    height: 50px;
+    padding: 0;
+    margin: 5px;
+}
+.f-GA{
+    border-radius: 10%;
+    background-size: cover;
+}
+.f-title ul{    
+    display: inline-block;
+    padding: 0;
+}
+.f-title li{
+    display: inline;
+    justify-content: center;  
+    padding: 0;  
+}
+/* ------- footer -------- */
+footer{
+    background:#000;
+    color: #999;
+    font-size: small;
+    padding: 10px;
+    text-align: center;
+    font-weight: bold;
+    border-top: 1px solid #333;
+}
+
+/* -------- R W D (比768px以下的時,執行)-------- */
+@media screen and (max-width:768px){
+    .sm-fb,.sm-home,.time-girl,.btn,.schedule-girl,.schedule-list-1,.s-hat,.s-img-2{
+        display: none;
+    }
+    .sm-3{
+        background: #055260;
+        overflow: hidden;
+        width: 36px;
+        height: 36px;
+        position: absolute;
+        top: 18px;
+        right: 20px;
+        border-radius: 50%;
+        display: block;
+    }
+    .sm-3 img{
+        position: relative;
+        top: 0px;
+        display: block;
+    }
+    .h-2016{
+        max-width: 95%;
+        display: block;    
+        text-align: center;
+        margin: 40px auto; 
+        position: relative;   
+    } 
+    .h-2016 img{    
+        width: 100%;
+    }     
+    .h-top{
+        max-width: 100%;
+        text-align: left;
+        padding: 10px;
+    }
+    .h-top img{
+        width: 220px;
+    }
+    .s-img-3{
+        width: 100%;
+        margin: 0;
+        padding: 0;
+        display: block;
+    }
+    .box{
+        position: absolute;
+        top: 0px;
+        left:50%;
+        transform: translate( -50% ,-50%);        
+    }
+    .schedule-list-2{
+        max-width: 100%;
+        text-align: center;       
+        padding: 0px 0px 40px 0px;
+        display: block;
+    }
+    .schedule-list-2 img{
+        object-fit: cover;
+        width: 90%;
+    }
+    .meun-list{
+        padding: 50px 40px 40px 40px;
+    }
+    .f-title{
+        background: #000;
+        color: #fff;  
+        height: 340px; 
+    }
+    .container{
+        display: flex;
+        flex-wrap: wrap;        
+    }
+    .f-box{
+        width: 100%;
+        height: 30px;
+        text-align: center;
+        background: #cccccc77;
+        border-radius: 0%;
+        font-weight: 500;
+        margin: 0px;
+        padding-top: 5PX;
+    }
+    .f-box p{
+        margin: 0px;
+    }
+    .f-title img{
+        height: 50px;
+        padding: 0;
+        margin: 10px;
+    }
+    .f-GA{
+        border-radius: 0%;
+    }
+    .f-title ul{    
+        display: block;
+        width: 100%;
+        margin: 0;
+    }
+    .f-title li{
+        float: left;
+        display: block;
+        list-style: none;
+        border-bottom: 1px solid #2a2a2a;
+        border-right: 1px solid #2a2a2a;
+        width: 50%;
+        height: 70px;
+    }    
+}
+
